@@ -1,0 +1,16 @@
+{
+	"name": "scss-to-css",
+	"version": "1.0.0",
+	"description": "SCSS To CSS and Create style.min.css",
+	"scripts": {
+		"scss"       : "node-sass src/scss/ -o assets --output-style expanded",
+		"scss:minify": "node-sass src/scss/ -o assets --output-style compressed",
+		"scss:min"   : "npm run scss:minify && node clone.js && npm run scss"
+	},
+	"author": "M Gogul Saravanan",
+	"license": "ISC",
+	"devDependencies": {
+		"node-sass": "^9.0.0",
+		"sass": "^1.72.0"
+	}
+}
